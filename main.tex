@@ -1,0 +1,195 @@
+\documentclass{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage[pdftex]{pict2e}
+\usepackage[utf8]{inputenc}
+
+\title{\textbf{Data Structure: Theoretical Approach}}
+\author{\textbf{Durgesh Raghuvanshi}\\B-Tech Department of Computer Science,\\
+IILM Academy of Higher Learning, Greater Noida, Uttar Pradesh, India}
+
+\date{19 May 2022}
+\begin{document}
+
+\maketitle
+
+\section*{ABSTRACT}
+Run with accordance with significance. The first if 
+these this paper explains about the basic terminologies 
+used in this paper in data structure. Better running 
+times will be other constraints, such as memory use 
+which will be paramount. The most appropriate data 
+structures and algorithms rather than through hacking 
+removing a few statements by some clever coding. 
+Data structures serve as the basis for abstract data 
+types (ADT). "The ADT defines the logical form of 
+the data type. The data structure implements the 
+physical form of the data type."Different types of data 
+structures are suited to different kinds of applications, 
+and some are highly specialized to specific tasks. For 
+example, relational databases commonly use B-tree 
+indexes for data retrieval, while compiler 
+implementations usually use hash tables to look up 
+identifiers. 
+
+\section*{INTRODUCTION}
+Data structures serve as the basis for abstract data 
+types (ADT). "The ADT defines the logical form of 
+the data type. The data structure implements the 
+physical form of the data type."Different types of data 
+structures are suited to different kinds of applications, 
+and some are highly specialized to specific tasks. For 
+example, relational databases commonly use B-tree 
+indexes for data retrieval, while compiler 
+implementations usually use hash tables to look up 
+identifiers. Data structures provide a means to manage 
+large amounts of data efficiently for uses such as large 
+databases and internet indexing services. Usually, 
+efficient data structures are key to designing efficient 
+algorithms. Some formal design methods and 
+programming languages emphasize data structures, 
+rather than algorithms, as the key organizing factor in 
+software design. Data structures can be used to 
+organize the storage and retrieval of information 
+stored in both main memory and secondary memory. 
+Data structures are generally based on the ability of a 
+computer to fetch and store data at any place in its 
+memory, specified by a pointer—a bit string, 
+representing a memory address, that can be itself 
+stored in memory and manipulated by the program. 
+Thus, the array and record data structures are based on 
+computing the addresses of data items with arithmetic 
+operations, while the linked data structures are based 
+on storing addresses of data items within the structure 
+itself. Many data structures use both principles, 
+sometimes combined in non-trivial ways (as in XOR 
+linking).[citation needed] 
+The implementation of a data structure usually 
+requires writing a set of procedures that create and 
+manipulate instances of that structure. The efficiency 
+of a data structure cannot be analyzed separately from 
+those operations. This observation motivates the 
+theoretical concept of an abstract data type, a data 
+structure that is defined indirectly by the operations 
+that may be performed on it, and the mathematical 
+properties of those operations (including their space 
+and time cost).[citation needed]An array is a number 
+of elements in a specific order, typically all of the 
+same type (depending on the language, individual 
+elements may either all be forced to be the same type, 
+or may be of almost any type). Elements are accessed 
+using an integer index to specify which element is 
+required. Typical implementations allocate contiguous 
+memory words for the elements of arrays (but this is 
+not necessity). Arrays may be fixed-length or 
+resizable. A linked list (also just called list) is a linear 
+collection of data elements of any type, called nodes, 
+where each node has itself a value, and points to the 
+next node in the linked list. The principal advantage 
+of a linked list over an array, is that values can always 
+be efficiently inserted and removed without relocating 
+the rest of the list. Certain other operations, such as 
+random access to a certain element, are however 
+slower on lists than on arrays. Most assembly languages and some low-level languages, such as BCPL (Basic Combined Programming Language), 
+lack built-in support for data structures. On the other 
+hand, many high-level programming languages and 
+some higher-level assembly languages, such as 
+MASM, have special syntax or other built-in support 
+for certain data structures, such as records and arrays.
+
+\section{SEQUENTIAL SEARCH}
+When data items are stored in a collection such as a 
+list, we say that they have a linear or sequential 
+relationship. Each data item is stored in a position 
+relative to the others. In Python lists, these relative 
+positions are the index values of the individual items. 
+Since these index values are ordered, it is possible for 
+us to visit them in sequence. This process gives rise to 
+our first searching technique, the sequential search. 
+Starting at the first item in the list, we simply move 
+from item to item, following the underlying sequential 
+ordering until we either find what we are looking for 
+or run out of items. If we run out of items, we have 
+discovered that the item we were searching for was 
+not present.
+
+
+
+\begin{table}
+\section*{ALGORITHM COMPLEXITY}
+\begin{center}
+    
+    \centering
+    \begin{tabular}{ | m{10em} | m{10em}| m{10em} | } 
+    \hline
+         Algorithm & Best case & Expected \\
+         \hline
+         Selection sort & O(N2) & O(N2)\\
+         \hline
+         Merge sort & O(NlogN) & O(NlogN)\\
+         \hline
+         Linear search & O(1) & O(1)\\
+         \hline
+         Binary search & O(1) & O(1)\\
+         \hline
+         
+         
+    \end{tabular}
+  
+    \label{tab:my_label}
+    \end{center}
+\end{table}
+
+\section*{DEPTH OF NODE}
+The depth of node is the length of the path from the 
+root to the node. A rooted tree with only one node has a depth of zero.
+
+\section*{MATHEMATICAL EXPRESSIONS}
+This is a simple math expression \(\sqrt{x^2+1}\) inside text. \\
+And this is also the same: 
+\begin{math}
+\sqrt{x^2+1}
+\end{math} \\
+Ths is an inline matrix here:
+$\begin{pmatrix}
+  a & b\\ 
+  c & d
+\end{pmatrix}$ 
+
+\section*{Insertion of Figure}
+This is a figure: \\
+\setlength{\unitlength}{0.8cm}
+\begin{picture}(12,4)
+\thicklines
+\put(8,3.3){{\footnotesize $3$-simplex}}
+\put(9,3){\circle*{0.1}}
+\put(8.3,2.9){$a_2$}
+\put(8,1){\circle*{0.1}}
+\put(7.7,0.5){$a_0$}
+\put(10,1){\circle*{0.1}}
+\put(9.7,0.5){$a_1$}
+\put(11,1.66){\circle*{0.1}}
+\put(11.1,1.5){$a_3$}
+\put(9,3){\line(3,-2){2}}
+\put(10,1){\line(3,2){1}}
+\put(8,1){\line(1,0){2}}
+\put(8,1){\line(1,2){1}}
+\put(10,1){\line(-1,2){1}}
+\end{picture}
+\\ This is another figure: \\
+\setlength{\unitlength}{1cm}
+\thicklines
+\begin{picture}(10,6)
+\put(2,2.2){\line(1,0){6}}
+\put(2,2.2){\circle{2}}
+\put(6,2.2){\oval(4,2)[r]}
+\end{picture}
+
+\section*{Reference}
+\subsection{Book of Data structures through C G. S Baluja.}
+\subsection{Pieren Garry Department of computer science New York University.}
+\subsection{Paul Xavier department of algorithms in Amsterdam}
+\subsection{Surendrakumar Ahuja IItdelhi department of computer science delhi}
+\subsection{Nick jones department of data mining Australia}
+\subsection{Wikipedia sequential search.}
+\end{document}
